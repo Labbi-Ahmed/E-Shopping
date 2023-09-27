@@ -1,5 +1,5 @@
-a:hover {
-	text-decoration: none;
+a{
+	text-decoration: none !important;
 }
 
 .nav-custom {
@@ -8,6 +8,7 @@ a:hover {
 	display: flex;
 	align-items: center;
 	height: 50px;
+	min-width: 100%;
 }
 
 .nav-custom-container {
@@ -19,16 +20,16 @@ a:hover {
 	width: 90%;
 }
 
-.logo{
+.logo {
 	position: absolute;
 	left: 0;
 }
 
-.search{
+.search {
 	width: 50%;
 }
 
-.nav-right-bnts{
+.nav-right-bnts {
 	position: absolute;
 	right: 0;
 }
@@ -72,9 +73,9 @@ a:hover {
 	flex-grow: .7;
 }
 
-.search-btn{
+.search-btn {
 	height: 32px;
-	margin-left:2px;
+	margin-left: 2px;
 }
 
 .navbar-right {
@@ -83,22 +84,29 @@ a:hover {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-
 }
 
 .navbar-item {
-	width: 80px;
-	height: 50px;
-	list-style: none; text-align : center;
+	max-width: 120px;
+	min-width: 60px;
+	height: 46px;
+	list-style: none;
+	text-align: center;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	text-align: center;
+	margin: 0 5px;
 }
 
+@media (max-width: 992px){
+	.btn-name{
+		display: none;
+	}
+}
 .navbar-item a {
-	padding: 5px;
+	padding: 8px;
 	color: black;
+	font-size: 14px;
 }
 
 .navbar-item a:hover {
@@ -106,5 +114,69 @@ a:hover {
 }
 
 .navbar-item:hover {
-	background-color: rgba(211, 211, 211, .2);
+	
+	outline: 1px solid rgba(0, 0, 0, .2) ;
+}
+
+.filter-section {
+	min-height: 100vh;
+	border-right: 3px solid rgba(0, 0, 0, 0.07);
+	background: #FFF;
+}
+
+@media (max-width: 992px){
+	.filter-section{
+		display: none;
+	}
+}
+
+.advertisement-img {
+	margin-top: 16px;
+	text-align: center;
+}
+
+.show-card-items{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+
+.card-item {
+	max-width: 200px;
+	max-height: 240px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	margin:5px;
+}
+
+.card-item h4 {
+	color: #000;
+	text-align: center;
+	font-family: Jacques Francois Shadow;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	text-transform: capitalize;
+}
+
+.card-item img {
+	width: 176px;
+	height: 142px;
+	flex-shrink: 0;
+}
+
+.card-item p {
+	color: #000;
+	text-align: center;
+	font-family: Jacques Francois Shadow;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	text-transform: capitalize;
 }
