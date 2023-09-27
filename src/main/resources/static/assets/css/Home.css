@@ -1,0 +1,110 @@
+a:hover {
+	text-decoration: none;
+}
+
+.nav-custom {
+	background: #FFABAB;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.24);
+	display: flex;
+	align-items: center;
+	height: 50px;
+}
+
+.nav-custom-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	position: relative;
+	width: 90%;
+}
+
+.logo{
+	position: absolute;
+	left: 0;
+}
+
+.search{
+	width: 50%;
+}
+
+.nav-right-bnts{
+	position: absolute;
+	right: 0;
+}
+
+.logo-eshop {
+	display: flex;
+	width: 160;
+	height: 50px;
+	flex-direction: column;
+	justify-content: center;
+	flex-shrink: 0;
+	color: #C50000;
+	text-align: center;
+	font-family: Inter;
+	font-size: 32px;
+	font-style: italic;
+	font-weight: 800;
+	line-height: normal;
+	text-transform: uppercase;
+	backdrop-filter: blur(2px);
+	text-shadow: 3px 3px 2px green;
+	letter-spacing: 3px;
+	border-radius: 10px;
+	box-shadow: 0px 1px 5px #8080806b;
+	cursor: pointer;
+}
+
+.logo-eshop:hover {
+	background-color: #ffffff61;
+}
+
+.navbar-search-bar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	margin: 0;
+}
+
+.navbar-search-bar input {
+	flex-grow: .7;
+}
+
+.search-btn{
+	height: 32px;
+	margin-left:2px;
+}
+
+.navbar-right {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+}
+
+.navbar-item {
+	width: 80px;
+	height: 50px;
+	list-style: none; text-align : center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.navbar-item a {
+	padding: 5px;
+	color: black;
+}
+
+.navbar-item a:hover {
+	color: gray;
+}
+
+.navbar-item:hover {
+	background-color: rgba(211, 211, 211, .2);
+}
