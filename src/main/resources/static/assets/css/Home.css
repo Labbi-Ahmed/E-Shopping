@@ -86,6 +86,15 @@ a{
 	align-items: center;
 }
 
+.status-login{
+	display: none !important;
+}
+
+.status-logout{
+	display: none !important;
+}
+
+
 .navbar-item {
 	max-width: 120px;
 	min-width: 60px;
@@ -130,6 +139,14 @@ a{
 	}
 }
 
+
+/*  main section started */
+
+.section{
+	
+	margin-top:80px;
+}
+
 .advertisement-img {
 	margin-top: 16px;
 	text-align: center;
@@ -143,6 +160,7 @@ a{
 
 
 .card-item {
+	position: relative;
 	max-width: 200px;
 	max-height: 240px;
 	display: flex;
@@ -150,8 +168,32 @@ a{
 	align-items: center;
 	justify-content: center;
 	flex-shrink: 0;
-	margin:5px;
+	margin: 10px;
+	border: 1px solid rgba(1,2,2,.2);
 }
+
+
+.add-to-cart{
+	position: absolute;
+    right: 0;
+    background: white;
+    height: 30px;
+    visibility: hidden; 
+    transition: right .1s ease;
+    padding: 3px;
+    padding-top: 8px;
+    border-radius: 5px 0px 0px 5px;
+    
+}
+.add-to-cart a{
+	cursor: pointer;
+}
+
+.card-item:hover  .add-to-cart{
+    right: 15px;
+	visibility:visible;
+}
+
 
 .card-item h4 {
 	color: #000;
@@ -173,10 +215,22 @@ a{
 .card-item p {
 	color: #000;
 	text-align: center;
-	font-family: Jacques Francois Shadow;
+	font-family: "Open sans";
 	font-size: 16px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
 	text-transform: capitalize;
+	padding:4px;
+	margin-bottom: 0;
+	
 }
+
+
+
+.test:hover ~ h1{
+	color: red;
+}
+
+
+
